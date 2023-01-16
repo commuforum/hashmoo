@@ -1,3 +1,18 @@
+Update your Ubuntu server with the following command:
+
+# sudo apt-get update && sudo apt-get upgrade -y
+
+Install the required dependencies with the following command:
+
+# sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev
+  bsdmainutils python3 libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev
+  libboost-thread-dev libboost-all-dev libboost-program-options-dev libminiupnpc-dev libzmq3-dev
+  libprotobuf-dev protobuf-compiler unzip software-properties-common cmake -y
+  
+  Now find Berkeley database 4.8 for whatever distro you have and install it.
+  
+ # wget "https://dl.walletbuilders.com/download?customer=28d85c2edb6904ce8c88d1e9764aaf6c1ed84308e67a77858f&filename=hashmoo-daemon-linux.tar.gz" -O hashmoo-daemon-linux.tar.gz
+
 Extract the tar file with the following command:
 
 # tar -xzvf hashmoo-qt-linux.tar.gz
